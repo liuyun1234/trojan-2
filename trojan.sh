@@ -149,7 +149,7 @@ EOF
 	#设置伪装站
 	rm -rf /usr/share/nginx/html/*
 	cd /usr/share/nginx/html/
-	wget https://github.com/troray/master/raw/master/web.zip
+	wget https://github.com/troray/trojan/raw/master/web.zip
     	unzip web.zip
     	rm -f web.zip
 	systemctl restart nginx.service
@@ -167,7 +167,7 @@ EOF
 	wget https://github.com/trojan-gfw/trojan/releases/download/v1.14.1/trojan-1.14.1-linux-amd64.tar.xz
 	tar xf trojan-1.*
 	#下载trojan客户端
-	wget https://github.com/troray/master/raw/master/trojan-cli.zip
+	wget https://github.com/troray/trojan/raw/master/trojan-cli.zip
 	unzip trojan-cli.zip
 	cp /usr/src/trojan-cert/fullchain.cer /usr/src/trojan-cli/fullchain.cer
 	trojan_passwd=$(cat /dev/urandom | head -1 | md5sum | head -c 8)
@@ -321,7 +321,7 @@ function remove_trojan(){
 }
 
 function bbr_boost_sh(){
-    bash <(curl -L -s -k "https://raw.githubusercontent.com/troray/master/master/tcp.sh")
+    wget --no-check-certificate -O tcp.sh https://raw.githubusercontent.com/troray/trojan/master/tcp.sh && chmod +x tcp.sh && ./tcp.sh
 }
 
 start_menu(){
