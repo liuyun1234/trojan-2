@@ -329,9 +329,11 @@ start_menu(){
     green " ===================================="
     green " Trojan 一键安装自动脚本      "
     green " 系统：centos7+/debian9+/ubuntu16.04+"
-    green " Trojan脚本为atrandys所创；BBR脚本为千影,cx9208所创"
+    green " BBR脚本：94ish.me"
+    green " Trojan脚本：https://github.com/atrandys"
+    green " WEB来自https://github.com/geekape"
     green " 脚本由波仔集成；本人只是升级了Trojan本版 "
-    green " 以及修改了两处错别字。                "
+    green " 以及修改了BBR安装方式。                "
     green " ===================================="
     echo
     red " ===================================="
