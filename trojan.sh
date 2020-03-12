@@ -321,15 +321,15 @@ function remove_trojan(){
 }
 
 function bbr_boost_sh(){
-    wget --no-check-certificate -O tcp.sh https://raw.githubusercontent.com/troray/trojan/master/tcp.sh && chmod +x tcp.sh && ./tcp.sh
+    wget --no-check-certificate -O tcp.sh https://github.com/troray/Linux-NetSpeed/raw/master/tcp.sh && chmod +x tcp.sh && ./tcp.sh
 }
 
 start_menu(){
     clear
     green " ===================================="
     green " Trojan 一键安装自动脚本      "
-    green " 系统：centos7+/debian9+/ubuntu16.04+"
-    green " BBR脚本：94ish.me"
+    green " 系统：centos7+/debian8/9+/ubuntu16.04+"
+    green " BBR脚本：https://github.com/cx9208"
     green " Trojan脚本：https://github.com/atrandys"
     green " WEB来自https://github.com/geekape"
     green " 脚本由波仔集成；本人只是升级了Trojan本版 "
