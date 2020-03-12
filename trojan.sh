@@ -321,7 +321,7 @@ function remove_trojan(){
 }
 
 function bbr_boost_sh(){
-    wget --no-check-certificate -O tcp.sh https://github.com/troray/Linux-NetSpeed/raw/master/tcp.sh && chmod +x tcp.sh && ./tcp.sh
+    wget --no-check-certificate -O tcp.sh https://raw.githubusercontent.com/troray/Linux-NetSpeed/master/tcp.sh && chmod +x tcp.sh && ./tcp.sh
 }
 
 start_menu(){
