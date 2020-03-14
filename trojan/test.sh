@@ -231,11 +231,7 @@ function remove_trojan(){
     systemctl stop trojan
     systemctl disable trojan
     rm -f ${systempwd}trojan.service
-    if [ "$release" == "centos" ]; then
-       
-   
-        
-    fi
+
     rm -rf /usr/src/trojan*
     
     green "=============="
