@@ -223,7 +223,6 @@ EOF
 	green "3、打开stop.bat即关闭Trojan客户端"
 	green "4、Trojan客户端需要搭配浏览器插件使用，例如switchyomega等"
 	green "======================================================================"
-}
 
 function remove_trojan(){
     red "================================"
