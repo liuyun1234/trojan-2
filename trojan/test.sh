@@ -233,7 +233,7 @@ function remove_trojan(){
     rm -f ${systempwd}trojan.service
     if [ "$release" == "centos" ]; then
        
-    else
+   
         
     fi
     rm -rf /usr/src/trojan*
