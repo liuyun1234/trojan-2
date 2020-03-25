@@ -164,7 +164,8 @@ EOF
 	if test -s /usr/src/trojan-cert/fullchain.cer; then
         cd /usr/src
 	#wget https://github.com/trojan-gfw/trojan/releases/download/v1.14.0/trojan-1.14.0-linux-amd64.tar.xz
-	wget https://github.com/trojan-gfw/trojan/releases/download/v1.14.1/trojan-1.14.1-linux-amd64.tar.xz
+	#wget https://github.com/trojan-gfw/trojan/releases/download/v1.14.1/trojan-1.14.1-linux-amd64.tar.xz
+	wget https://github.com/trojan-gfw/trojan/releases/download/v1.15.1/trojan-1.15.1-linux-amd64.tar.xz
 	tar xf trojan-1.*
 	#下载trojan客户端
 	wget https://github.com/troray/trojan/raw/master/trojan-cli.zip
@@ -278,11 +279,12 @@ EOF
 	green "======================================================================"
 	green "Trojan已安装完成，请使用以下链接下载trojan客户端，此客户端已配置好所有参数"
 	green "1、复制下面的链接，在浏览器打开，下载客户端"
+	yellow "推荐：https://github.com/troray/trojan/raw/master/TCS-300.zip"
 	yellow "http://${your_domain}/$trojan_path/trojan-cli.zip"
-	red "请记录下面规则网址"
-	yellow "http://${your_domain}/trojan.txt"
-	green "2、将下载的压缩包解压，打开文件夹，打开start.bat即打开并运行Trojan客户端"
-	green "3、打开stop.bat即关闭Trojan客户端"
+	red "请记录下面信息"
+	yellow "域名：$your_domain"
+	yellow "密码：$trojan_passwd"
+	yellow "端口：443"
 	green "4、Trojan客户端需要搭配浏览器插件使用，例如switchyomega等"
 	green "======================================================================"
 	else
@@ -331,8 +333,7 @@ start_menu(){
     green " BBR脚本：https://github.com/cx9208"
     green " Trojan脚本：https://github.com/atrandys"
     green " WEB来自https://github.com/geekape"
-    green " 脚本由波仔集成；本人只是升级了Trojan本版 "
-    green " 以及修改了BBR安装方式。                "
+    green " 安装脚本修改自波仔 "               "
     green " ===================================="
     echo
     red " ===================================="
