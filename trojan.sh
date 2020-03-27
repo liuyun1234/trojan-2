@@ -279,8 +279,9 @@ EOF
 	green "Trojan已安装完成，请使用以下链接下载trojan客户端，此客户端已配置好所有参数"
 	green "1、复制下面的链接，在浏览器打开，下载客户端"
 	yellow "http://${your_domain}/$trojan_path/trojan-cli.zip"
-	red "请记录下面规则网址"
-	yellow "http://${your_domain}/trojan.txt"
+	red "请记录下面的信息"
+	yellow "域名：$your_domain"
+	yellow "密码：$trojan_passwd"
 	green "2、将下载的压缩包解压，打开文件夹，打开start.bat即打开并运行Trojan客户端"
 	green "3、打开stop.bat即关闭Trojan客户端"
 	green "4、Trojan客户端需要搭配浏览器插件使用，例如switchyomega等"
@@ -288,6 +289,7 @@ EOF
 	else
     red "================================"
 	red "https证书没有申请成功，本次安装失败"
+	red "请检查SELinux是否关闭，80端口是否放开"
 	red "================================"
 	fi
 	
