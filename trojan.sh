@@ -282,6 +282,7 @@ EOF
 	red "请记录下面的信息"
 	yellow "域名：$your_domain"
 	yellow "密码：$trojan_passwd"
+	yellow "端口：443"
 	green "2、将下载的压缩包解压，打开文件夹，打开start.bat即打开并运行Trojan客户端"
 	green "3、打开stop.bat即关闭Trojan客户端"
 	green "4、Trojan客户端需要搭配浏览器插件使用，例如switchyomega等"
