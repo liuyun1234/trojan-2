@@ -334,8 +334,7 @@ start_menu(){
     green " BBR脚本：https://github.com/cx9208"
     green " Trojan脚本：https://github.com/atrandys"
     green " WEB来自https://github.com/geekape"
-    green " 脚本由波仔集成；本人只是升级了Trojan本版 "
-    green " 以及修改了BBR安装方式。                "
+    green " 居于波仔脚本修改"
     green " ===================================="
     echo
     red " ===================================="
