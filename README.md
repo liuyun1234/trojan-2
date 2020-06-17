@@ -4,7 +4,7 @@
 ### CMake >= 3.7.2
 ### Boost >= 1.66.0
 ### OpenSSL >= 1.1.0
-### libmysqlclient
+
 ## 支持centos7+/debian9+/ubuntu16.04+
 ## 安装命令：
 `wget --no-check-certificate -O trojan.sh https://github.com/troray/trojan/raw/master/trojan.sh && chmod +x trojan.sh && ./trojan.sh`
